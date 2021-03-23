@@ -24,13 +24,13 @@ from models import *
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--num_epochs', type=int, help='Number of Training Epochs', default=25)
-parser.add_argument('--alpha', type=float, help='Learning Rate', default=0.005)
+parser.add_argument('--alpha', type=float, help='Learning Rate', default=0.001)
 parser.add_argument('--embed_dim',type=int,help="Size of embedding dimension for matrix factorization",default=64)
 parser.add_argument('--user_min',type=int,help='The approximate minimum number of items each user must have watched',default=10)
 parser.add_argument('--item_min',type=int,help='The approximate minimum number of users each item must have',default=10)
 parser.add_argument('--write_filename',type=str,help='The filename to write all the Netflix data to, and later read',default="")
 parser.add_argument('--read_filename',type=str,help='The filename to read all the Netflix data from for the Dataframe',default="data.csv")
-parser.add_argument('--batch_size',type=int,help='The batch size for stochastic gradient descent',default=32)
+parser.add_argument('--batch_size',type=int,help='The batch size for stochastic gradient descent',default=128)
 parser.add_argument('--reg',type=float,help='The regularization strength on l2 norm',default = 0.0005)
 parser.add_argument('--basepath',type=str,help="The basepath to where the Netflix .txt data files are help",default="archive")
 
