@@ -1,10 +1,10 @@
-# Reimplementation of BPR: Bayesian Personalized Ranking from Implicit Feedback  
+# PyTorch reimplementation of BPR: Bayesian Personalized Ranking from Implicit Feedback  
 
 Dataset for Netflix may be downloaded from https://www.kaggle.com/netflix-inc/netflix-prize-data  
 
 `python BPR_Optimization.py --num_epochs=25 --alpha=0.005 --embed_dim=64 --user_min=10 --item_min=10 --write_filename='' read_filename='data.csv' --batch_size=32 --reg=0.0005 --basepath="archive"`  
 
-Argument Descriptions:  
+**Argument Descriptions**:  
 	--num_epochs: type=int, help='Number of Training Epochs', default=25  
 	--alpha: type=float, help='Learning Rate', default=0.005)  
 	--embed_dim: type=int,help="Size of embedding dimension for matrix factorization",default=64  
